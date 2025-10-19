@@ -153,17 +153,29 @@ img {
 }
 
 .btn-watch-video {
+    font-weight: 600;
+    font-size: 16px;
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+    color: #02897a;
     width: 164px;
     height: 53px;
     border: none;
     background-color: transparent;
-    padding: 15px 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+.watch-video-icon {
+    fill: #02897a;
+    margin-right: 8px;
 }
 /* #endregion */
 
 /* #region product */
 .product-container {
-    padding-bottom: 50px;
+    margin-bottom: 50px;
 }
 
 .product-title {
@@ -184,7 +196,39 @@ img {
 
 .product-item {
     display: block;
-    flex-basis: calc((100% - 90px) / 4);
+    width: calc((100% - 90px) / 4);
+}
+
+.product-icon {
+    fill: #ffffff;
+}
+
+.product-icon-border {
+    width: 54px;
+    height: 54px;
+    border: 1px solid transparent;
+    border-radius: 19px;
+    background-color: #02897a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 26px;
+}
+
+.green {
+    background-color: #02897a;
+}
+
+.blue {
+    background-color: #4d8dff;
+}
+
+.purple {
+    background-color: #740a76;
+}
+
+.red {
+    background-color: #f03e3d;
 }
 
 .product-subtitle {
@@ -320,10 +364,38 @@ img {
 
 .customer-item {
     margin-bottom: 25px;
+    display: flex;
+    gap: 30px;
 }
 
 .customer-item:last-child {
     margin-bottom: 0;
+}
+
+.customer-icon {
+    fill: #ffffff;
+}
+
+.customer-icon-border {
+    width: 35px;
+    height: 35px;
+    border: 2.92px solid #fff;;
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.yellow {
+    background-color: #f90;;
+}
+
+.red {
+    background-color: #f03e3d;;
+}
+
+.blue {
+    background-color: #4d8dff;;
 }
 
 .customer-item-text {
@@ -436,7 +508,7 @@ img {
     align-items: center;
     justify-content: center;
     gap: 20px;
-    flex-basis: calc((100% - 100px) / 2);
+    width: calc((100% - 100px) / 2);
 }
 
 .staff-item-text {
@@ -494,8 +566,7 @@ img {
 .strategies-item {
     border: 1px solid #dedede;
     border-radius: 8px;
-    /* flex-basis: calc((100% - 60px) / 3); */
-    width: 350px;
+    width: calc((100% - 60px) / 3);
 }
 
 .strategies-item:hover .strategies-item-title {
@@ -566,8 +637,7 @@ img {
     border: 1px solid transparent;
     border-radius: 8px;
     box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.25);
-    /* flex-basis: calc((100% - 144px) /3); */
-    width: 322px;
+    width: calc((100% - 144px) /3);
 }
 
 .price-item-title {
