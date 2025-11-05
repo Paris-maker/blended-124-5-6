@@ -962,11 +962,10 @@ img {
     line-height: 1.5;
     color: #22343d;
     margin-bottom: 8px;
-    min-width: 105px;
 }
 
 .resource-list {
-    max-width: 118px;
+    min-width: 118px;
 }
 
 .stuff-list {
